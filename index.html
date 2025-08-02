@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Cafe & Gaming Hub</title>
+    <!-- Use a modern, clean font like Poppins for headers and Inter for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to enhance the aesthetic */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Deeper dark background */
+            color: #f1f5f9; /* Light text for contrast */
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .bg-hero {
+            background-image: url('https://placehold.co/1920x1080/0f172a/60a5fa?text=Ultimate+Gaming+Experience');
+            background-size: cover;
+            background-position: center;
+        }
+        .nav-links.hidden {
+            display: none;
+        }
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex !important;
+            }
+            .mobile-menu-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-slate-900 bg-opacity-80 backdrop-blur-md shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 md:flex md:justify-between md:items-center">
+            <div class="flex items-center justify-between">
+                <!-- Logo/Brand Name -->
+                <a href="#" class="text-3xl font-bold text-blue-500 hover:text-blue-400 transition-colors duration-200">
+                    <span class="text-white">Cyber</span> Hub
+                </a>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="mobile-menu-button text-gray-400 focus:outline-none md:hidden">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Navigation Links -->
+            <div id="nav-links" class="nav-links mt-4 md:mt-0 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-8 hidden transition-all duration-300 ease-in-out">
+                <a href="#home" class="text-lg font-medium text-gray-300 hover:text-blue-500 transition-colors duration-200">Home</a>
+                <a href="#services" class="text-lg font-medium text-gray-300 hover:text-blue-500 transition-colors duration-200">Services</a>
+                <a href="#pricing" class="text-lg font-medium text-gray-300 hover:text-blue-500 transition-colors duration-200">Pricing</a>
+                <a href="#contact" class="text-lg font-medium text-gray-300 hover:text-blue-500 transition-colors duration-200">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="bg-hero bg-slate-900 bg-blend-multiply h-[80vh] flex items-center justify-center text-center px-4">
+            <div class="p-8 max-w-3xl bg-slate-900 bg-opacity-70 rounded-3xl shadow-2xl backdrop-blur-sm border border-slate-700">
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-wide">
+                    Elevate Your Gaming Experience
+                </h1>
+                <p class="text-base sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
+                    Immerse yourself in high-performance gaming, lightning-fast internet, and a community of fellow enthusiasts.
+                </p>
+                <a href="#services" class="inline-block bg-blue-500 text-white font-bold py-3 px-10 rounded-full text-lg shadow-xl hover:bg-blue-600 transition-all duration-300 transform hover:scale-105">
+                    Start Your Adventure
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 px-4 bg-slate-900">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                    <!-- Service Card 1 -->
+                    <div class="bg-slate-800 p-8 rounded-3xl shadow-lg border border-slate-700 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-blue-500 mb-4 text-center">
+                            🚀
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white mb-2 text-center">High-Speed Internet</h3>
+                        <p class="text-gray-400 text-center">Blazing fast fiber optic connection for seamless gaming and downloads.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-slate-800 p-8 rounded-3xl shadow-lg border border-slate-700 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-blue-500 mb-4 text-center">
+                            🎮
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white mb-2 text-center">Premium Gaming PCs</h3>
+                        <p class="text-gray-400 text-center">Top-tier rigs with the latest GPUs, 144Hz monitors, and mechanical keyboards.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-slate-800 p-8 rounded-3xl shadow-lg border border-slate-700 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-blue-500 mb-4 text-center">
+                            🖨️
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white mb-2 text-center">Professional Printing</h3>
+                        <p class="text-gray-400 text-center">High-quality laser printing and scanning services for all your needs.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-slate-800 p-8 rounded-3xl shadow-lg border border-slate-700 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <div class="text-5xl text-blue-500 mb-4 text-center">
+                            ☕
+                        </div>
+                        <h3 class="text-2xl font-semibold text-white mb-2 text-center">Snacks & Beverages</h3>
+                        <p class="text-gray-400 text-center">A wide selection of energizing snacks and refreshing drinks to keep you going.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="py-20 px-4 bg-slate-800">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">Choose Your Plan</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Pricing Card 1 -->
+                    <div class="bg-slate-900 p-8 rounded-3xl shadow-lg text-center flex flex-col justify-between transform hover:scale-105 transition-transform duration-300 border border-slate-700">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">1 Hour</h3>
+                            <p class="text-gray-400 mb-4">Quick Session</p>
+                            <p class="text-6xl font-extrabold text-blue-500 mb-4">
+                                $2
+                            </p>
+                            <ul class="text-gray-300 text-left space-y-2 mb-6">
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> High-speed Internet</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> Standard PC</li>
+                            </ul>
+                        </div>
+                        <button class="bg-slate-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-500 transition-colors duration-300">Choose Plan</button>
+                    </div>
+                    <!-- Pricing Card 2 (Featured) -->
+                    <div class="relative bg-slate-900 p-8 rounded-3xl shadow-xl text-center flex flex-col justify-between transform hover:scale-105 transition-transform duration-300 border-2 border-blue-500">
+                        <div class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-bold py-1 px-4 rounded-bl-xl rounded-tr-3xl tracking-wider">
+                            POPULAR
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">3 Hours</h3>
+                            <p class="text-gray-400 mb-4">Gaming Block</p>
+                            <p class="text-6xl font-extrabold text-blue-500 mb-4">
+                                $5
+                            </p>
+                            <ul class="text-gray-300 text-left space-y-2 mb-6">
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> High-speed Internet</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> Premium PC Access</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> Free soft drink</li>
+                            </ul>
+                        </div>
+                        <button class="bg-blue-500 text-white font-bold py-3 px-6 rounded-full hover:bg-blue-600 transition-colors duration-300 shadow-lg">Choose Plan</button>
+                    </div>
+                    <!-- Pricing Card 3 -->
+                    <div class="bg-slate-900 p-8 rounded-3xl shadow-lg text-center flex flex-col justify-between transform hover:scale-105 transition-transform duration-300 border border-slate-700">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">5 Hours</h3>
+                            <p class="text-gray-400 mb-4">Marathon Session</p>
+                            <p class="text-6xl font-extrabold text-blue-500 mb-4">
+                                $8
+                            </p>
+                            <ul class="text-gray-300 text-left space-y-2 mb-6">
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> All features included</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> VR gaming access</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> Priority support</li>
+                            </ul>
+                        </div>
+                        <button class="bg-slate-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-500 transition-colors duration-300">Choose Plan</button>
+                    </div>
+                    <!-- Pricing Card 4 -->
+                    <div class="bg-slate-900 p-8 rounded-3xl shadow-lg text-center flex flex-col justify-between transform hover:scale-105 transition-transform duration-300 border border-slate-700">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">10 Hours</h3>
+                            <p class="text-gray-400 mb-4">The Ultimate Pass</p>
+                            <p class="text-6xl font-extrabold text-blue-500 mb-4">
+                                $15
+                            </p>
+                            <ul class="text-gray-300 text-left space-y-2 mb-6">
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> All features included</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> 2-for-1 snacks</li>
+                                <li class="flex items-center"><span class="text-blue-500 mr-2">✓</span> VIP lounge access</li>
+                            </ul>
+                        </div>
+                        <button class="bg-slate-700 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-500 transition-colors duration-300">Choose Plan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 bg-slate-900">
+            <div class="container mx-auto max-w-4xl">
+                <h2 class="text-4xl font-bold text-center mb-16 text-white">Get in Touch</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Contact Info -->
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white mb-2">Our Location</h3>
+                            <p class="text-gray-400 text-lg">123 Game Street, Suite 101, Tech City, TX 78701</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-white mb-2">Reach Us</h3>
+                            <p class="text-gray-400 text-lg">+1 (555) 123-4567</p>
+                            <p class="text-gray-400 text-lg">info@cyberhub.com</p>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="bg-slate-800 p-8 rounded-3xl shadow-lg border border-slate-700">
+                        <form action="#" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-xl transition-colors duration-300 shadow-md">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-gray-400 py-8 px-4 border-t border-slate-700">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <p>&copy; 2023 Cyber Hub. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-white transition-colors duration-200">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-white transition-colors duration-200">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 1.25a10.75 10.75 0 00-7.85 3.32c-.4.5-.7 1.08-.9 1.7a.75.75 0 001.38.6c.14-.3.33-.6.53-.9a8.25 8.25 0 0113.62-5.74.75.75 0 10-.73 1.34c.3-.16.59-.34.87-.5.33-.18.66-.35 1-.51l.03-.02a.75.75 0 10-.75-1.3l-.04.02a8.23 8.23 0 01-1.07.5c-.32.18-.65.34-.98.5-.23-.05-.47-.08-.7-.1l.01-.01c.14-.07.28-.15.42-.23a.75.75 0 00-.73-1.34zm-8.31 9.4c.03-.13.06-.26.09-.39a.75.75 0 00-.8-1.04c-.1.02-.2.05-.3.08a.75.75 0 00.5.85c.1.03.2.06.31.08zm1.53-2.34a.75.75 0 00-.78 1.03c.1-.03.2-.06.3-.08a.75.75 0 00.48-.95c-.09-.04-.19-.07-.29-.1zm-1.8 1.35c.12-.03.24-.05.36-.08a.75.75 0 00-.8-1.04c-.1.03-.2.05-.3.08a.75.75 0 00.5.85c.1.03.2.06.31.08zm1.53-2.34a.75.75 0 00-.78 1.03c.1-.03.2-.06.3-.08a.75.75 0 00.48-.95c-.09-.04-.19-.07-.29-.1zM16.5 6.25a.75.75 0 00-1.5 0v3a.75.75 0 001.5 0v-3zM21 9.25a.75.75 0 00-.75.75v3c0 .41-.34.75-.75.75h-2.5a.75.75 0 00-.75.75v3.5a.75.75 0 00.75.75h3.5a.75.75 0 00.75-.75v-7.25z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-white transition-colors duration-200">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.5 10a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0zm-7.5 3.5c.25.25.56.37.93.37h5.14c.37 0 .68-.12.93-.37.25-.25.37-.56.37-.93V8.42c0-.37-.12-.68-.37-.93-.25-.25-.56-.37-.93-.37H9.57c-.37 0-.68.12-.93.37-.25.25-.37.56-.37.93V14.5c0 .37.12.68.37.93z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Navigation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const navLinks = document.getElementById('nav-links');
+
+            mobileMenuButton.addEventListener('click', function () {
+                navLinks.classList.toggle('hidden');
+            });
+            // Hide menu when a link is clicked
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!navLinks.classList.contains('hidden')) {
+                        navLinks.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
